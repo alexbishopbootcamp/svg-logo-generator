@@ -1,5 +1,5 @@
 // Classes for each object
-class Square {
+export class Square {
   setColor(color) {
     this.backgroundColor = color;
   }
@@ -8,7 +8,7 @@ class Square {
   }
 }
 
-class Circle {
+export class Circle {
   setColor(color) {
     this.backgroundColor = color;
   }
@@ -17,7 +17,7 @@ class Circle {
   }
 }
 
-class Triangle  {
+export class Triangle  {
   setColor(color) {
     this.backgroundColor = color;
   }
