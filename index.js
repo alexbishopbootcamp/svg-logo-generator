@@ -3,7 +3,6 @@ import inquirer from 'inquirer';
 import autocomplete from 'inquirer-autocomplete-prompt';
 import fs from 'fs';
 import {generateBadge} from './utils/svg.js';
-
 import colornames from 'colornames';
 
 // Get all indexed color names
@@ -13,7 +12,8 @@ inquirer.registerPrompt('autocomplete', autocomplete);
 
 function pickColor(answersSoFar, input) {
     if (!input) {
-      return colorsNames.filter(color => isNaN(color.name.slice(-1)));
+      // Return all valid CSS colors
+      return colorsNames.filter(color => color.css && isNaN(color.name.slice(-1) ));
     }
     // if input is a valid hex code, return it
     if (/^#?([a-f0-9]{6})$/i.test(input)) {
@@ -23,7 +23,8 @@ function pickColor(answersSoFar, input) {
       }
       return [input.toUpperCase()];
     }
-    return colorsNames.filter(color => color.name.toLowerCase().startsWith(input.toLowerCase()));
+    // Return all color names that start with the input and are valid CSS colors
+    return colorsNames.filter(color => color.css && isNaN(color.name.slice(-1)) && color.name.toLowerCase().startsWith(input.toLowerCase()) );
 }
 
 const questions = [
