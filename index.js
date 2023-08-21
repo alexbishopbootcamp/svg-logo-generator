@@ -57,6 +57,7 @@ const questions = [
   }
 ];
 
+// Ask for user input and write to file
 inquirer.prompt(questions).then(answers => {
   const svgCode = generateBadge(answers);
   fs.writeFileSync('out.svg', svgCode);
