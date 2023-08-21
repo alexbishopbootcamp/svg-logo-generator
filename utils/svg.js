@@ -4,7 +4,7 @@ export class Square {
     this.backgroundColor = color;
   }
   render() {
-    return `<rect x="70" y="20" width="160" height="160" fill="${this.backgroundColor}"/>`;
+    return `<rect x="70" y="20" width="160" height="160" fill="${this.backgroundColor}" />`;
   }
 }
 
@@ -13,7 +13,7 @@ export class Circle {
     this.backgroundColor = color;
   }
   render() {
-    return `<circle cx="150" cy="100" r="90" fill="${this.backgroundColor}"/>`;
+    return `<circle cx="150" cy="100" r="90" fill="${this.backgroundColor}" />`;
   }
 }
 
@@ -22,7 +22,7 @@ export class Triangle  {
     this.backgroundColor = color;
   }
   render() {
-    return `<polygon points="150, 18 244, 182 56, 182" fill="${this.backgroundColor}"/>`;
+    return `<polygon points="150, 18 244, 182 56, 182" fill="${this.backgroundColor}" />`;
   }
 }
 
