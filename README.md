@@ -23,7 +23,8 @@ Clone the repository code, and then run ```npm install``` in the root directory
 
 Run ```node injex.js``` in the root directory and answer the prompts.
 
-Preview image:
+Preview:
+
 ![Preview image](preview.png)
 
 A demonstration video can be found [here](https://drive.google.com/file/d/1bzxnWlj5XRhU4S-v4VQF2jbMlMLBRQhM/view?usp=sharing)

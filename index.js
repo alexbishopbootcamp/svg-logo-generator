@@ -60,6 +60,6 @@ const questions = [
 // Ask for user input and write to file
 inquirer.prompt(questions).then(answers => {
   const svgCode = generateBadge(answers);
-  fs.writeFileSync('out.svg', svgCode);
-  console.log("Wrote SVG file to out.svg")
+  fs.writeFileSync('logo.svg', svgCode);
+  console.log("Generated logo.svg")
 });
