@@ -1,0 +1,33 @@
+{
+  "name": "svg-logo-generator",
+  "version": "1.0.0",
+  "description": "Generate a SVG logo based on some parameters",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexbishopbootcamp/svg-logo-generator.git"
+  },
+  "keywords": [
+    "svg",
+    "logo",
+    "generator"
+  ],
+  "author": "Alex Bishop",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexbishopbootcamp/svg-logo-generator/issues"
+  },
+  "homepage": "https://github.com/alexbishopbootcamp/svg-logo-generator#readme",
+  "dependencies": {
+    "colornames": "^1.1.1",
+    "inquirer": "^9.2.10",
+    "inquirer-autocomplete-prompt": "^3.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.6.2"
+  }
+}
